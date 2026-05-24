@@ -3,33 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AI106 HTML project boilerplate" />
-    <title>AI106 HTML</title>
+    <meta
+      name="description"
+      content="Portfolio website for a frontend developer with a polished, rounded, and modern layout."
+    />
+    <title>Portfolio | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <h1>AI106 HTML</h1>
-      <p class="tagline">Starter boilerplate — edit and build from here.</p>
+      <div class="header-top">
+        <a class="brand" href="#">Avery Chen</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer</p>
+          <h1 id="hero-heading">Crafting clean portfolio experiences in every viewport.</h1>
+          <p>
+            I build modern websites with thoughtful interaction, smooth layout,
+            and a polished visual rhythm that works beautifully on desktop and mobile.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Work</a>
+            <button type="button" id="contact-button" class="button button-secondary">
+              Contact Me
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Portfolio highlights">
+          <div class="stat-card">
+            <span>8+</span>
+            <p>Years experience</p>
+          </div>
+          <div class="stat-card">
+            <span>24</span>
+            <p>Web projects</p>
+          </div>
+          <div class="stat-card">
+            <span>12</span>
+            <p>Happy clients</p>
+          </div>
+        </aside>
+      </section>
     </header>
 
     <main id="main">
-      <section class="card" aria-labelledby="welcome-heading">
-        <h2 id="welcome-heading">Welcome</h2>
+      <section id="about" class="section-card" aria-labelledby="about-heading">
+        <h2 id="about-heading">About me</h2>
         <p>
-          This project includes separate HTML, CSS, and JavaScript files. Open
-          <code>index.html</code> in a browser or use a local dev server to
-          get started.
+          I specialise in frontend development and creating polished, responsive
+          portfolio websites. My work blends clean typography, layered color,
+          and subtle motion to make content feel both elegant and approachable.
         </p>
-        <button type="button" id="demo-button" class="button">
-          Try the demo
-        </button>
-        <p id="demo-output" class="demo-output" aria-live="polite"></p>
+      </section>
+
+      <section id="work" class="section-grid" aria-labelledby="work-heading">
+        <h2 id="work-heading">What I do</h2>
+        <div class="feature-card">
+          <h3>Design-driven UI</h3>
+          <p>From wireframes to polished layouts, I create interfaces that feel effortless.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Responsive builds</h3>
+          <p>Every website is crafted to look great on phones, tablets, and desktops.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Modern interactions</h3>
+          <p>I add subtle animation and button shadows to make interfaces feel tactile.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="section-card" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Featured projects</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Brand refresh website</h3>
+            <p>Modern landing page design with a calm, structured layout and soft gradients.</p>
+          </article>
+          <article class="project-card">
+            <h3>Portfolio rebuild</h3>
+            <p>A responsive portfolio site built to showcase visual work and client stories.</p>
+          </article>
+          <article class="project-card">
+            <h3>Product launch page</h3>
+            <p>High-conversion product page designed with clear calls-to-action and strong visuals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section-card" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in touch</h2>
+        <p>
+          Ready to build your next portfolio site or refresh an existing brand?
+          Send a quick message and I’ll reply within one business day.
+        </p>
+        <div class="contact-panel">
+          <p>Email: <a href="mailto:hello@averychen.dev">hello@averychen.dev</a></p>
+          <p id="message-output" class="message-output" aria-live="polite"></p>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> AI106 HTML</p>
+      <p>&copy; <span id="year"></span> Avery Chen. Built with Playfair Display.</p>
     </footer>
 
     <script src="js/main.js" defer></script>
