@@ -165,6 +165,15 @@ p:last-child {
   gap: 1rem;
 }
 
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) * 1.1);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  object-fit: cover;
+}
+
 .stat-card {
   padding: 1.5rem;
   border-radius: var(--radius);
